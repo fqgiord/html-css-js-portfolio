@@ -34,7 +34,6 @@ nav,
 }
 
 nav {
-  /* background-color: aqua; */
   justify-content: space-around;
   align-items: center;
   height: 17vh;
@@ -56,11 +55,14 @@ a:hover {
   color: rgb(108, 108, 108);
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgba(108, 108, 108);
+  text-decoration-color: rgba(161, 187, 198, 0.1);
+  color: rgba(161, 187, 198, 0.9);
+  font-weight: 700;
 }
 
 .logo {
   font-size: 2rem;
+  font-weight: 500;
   color: #3d535f;
   letter-spacing: 3px;
 }
@@ -100,14 +102,22 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  border-style: solid;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-width: 0.19rem;
+  border-color: rgba(13, 13, 13);
 }
 
 .menu-links a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
   display: block;
   padding: 10px;
   text-align: center;
@@ -115,6 +125,11 @@ a:hover {
   color: black;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
+}
+
+.menu-links a:hover {
+  background-color: rgba(161, 187, 198, 0.6);
+  color: white;
 }
 
 .menu-links li {
@@ -151,7 +166,7 @@ section {
   /* background-color: aqua; */
   padding-top: 4vh;
   height: 96vh;
-  margin: 0 10rem;
+  /* margin: 0 10rem; */
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -168,6 +183,10 @@ section {
   width: 300px;
   margin: auto 0;
 }
+/* 
+.pic {
+  border-radius: 8% 88% 20% 150%;
+} */
 
 #profile {
   display: flex;
@@ -264,8 +283,15 @@ section {
 
 /* SECTION ABOUT */
 
-.about {
+#about {
+  background-color: rgba(244, 248, 248, 0.6);
+}
+
+#about {
+  margin: 2rem;
   position: relative;
+  z-index: -1;
+  bottom: -4rem;
 }
 
 .about-containers {
@@ -274,18 +300,33 @@ section {
   margin-top: 2rem;
 }
 
+/* Aplicando efeitos na section about */
+/* **************************************************** */
 .about-details-container {
-  /* background-color: aqua; */
+  opacity: 0;
   justify-content: center;
   flex-direction: column;
+  filter: blur(15px);
+  transition: all 2s;
+  transform: translateX(-100%);
 }
+
+.show {
+  transform: translateX(0);
+  opacity: 1;
+  filter: blur(0px);
+  transition: all 2s;
+}
+
+/* ************************************* */
 
 .about-details-container p {
   color: rgb(155, 154, 154);
-  /* background-color: aqua; */
+  background-color: rgba(255, 255, 255, 0.6);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   justify-content: center;
   flex-direction: column;
+  border-radius: 1rem;
 }
 
 .about-containers,
@@ -294,15 +335,17 @@ section {
 }
 
 .about-pic {
+  border-radius: 90rem 45rem 90rem;
   margin-bottom: 12px;
-  border-radius: 2rem;
+  z-index: -1;
 }
 
-.arrow {
+/* .arrow {
+  background-color: aqua;
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
-}
+} */
 
 .details-container {
   padding: 1.5rem;
@@ -329,7 +372,9 @@ section {
 
 /* EXPERIENCE SECTION */
 #experience {
+  margin: 2rem;
   position: relative;
+  bottom: -4rem;
 }
 
 .experience-sub-tittle {
@@ -340,9 +385,20 @@ section {
 }
 
 .experience-details-container {
+  opacity: 0;
+  filter: blur(15px);
+  transition: all 2s;
+  transform: translateX(-100%);
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.show {
+  transform: translateX(0);
+  opacity: 1;
+  filter: blur(0px);
+  transition: all 2s;
 }
 
 .article-container {
@@ -369,7 +425,10 @@ article {
 /* PROJECTS SECTION */
 
 #projects {
+  margin: 2rem;
   position: relative;
+  top: -2rem;
+  opacity: 66%;
 }
 
 .color-container {
@@ -396,11 +455,23 @@ article {
 
 /* CONTACT */
 
-#contact {
+.contact {
+  margin: 2rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  filter: blur(15px);
+  transition: all 4s;
+  transform: translateX(-100%);
+  z-index: -1;
+}
+
+.show {
+  transform: translateX(0);
+  opacity: 1;
+  filter: blur(0px);
+  transition: all 2s;
 }
 
 .section__text_p1 {
@@ -447,6 +518,7 @@ footer {
   height: 26vh;
   margin: 0 1rem;
   margin-top: -5rem;
+  z-index: 2;
 }
 
 footer p {
