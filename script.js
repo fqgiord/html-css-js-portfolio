@@ -15,6 +15,6 @@ const myObserver = new IntersectionObserver((entries) => {
   });
 });
 
-const elements = document.querySelectorAll(".about-details-container, .experience-details-container, .contact");
+const elements = document.querySelectorAll(".about-details-container, .experience-details-container, .contact-info-upper-container");
 
 elements.forEach((element) => myObserver.observe(element));

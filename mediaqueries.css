@@ -1,7 +1,14 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1300px) {
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
+  }
+  
+  #contact,
+  .info-uper-container {
+    background-color: blueviolet;
+    margin-top: 15rem;
+    display: flex;
   }
 
   .about-containers {
@@ -9,7 +16,20 @@
   }
 
   #hamburger-nav {
+    display: none;
+  }
+
+  #contact,
+  .info-uper-container {
+    /* background-color: yellow; */
+    margin-top: 10rem;
     display: flex;
+  }
+
+  footer {
+    /* background-color: aqua; */
+    height: 10vh;
+    margin: 0%;
   }
 }
 
@@ -23,9 +43,11 @@
   #experience,
   .experience-details-container {
     margin-top: 2rem;
+    margin: 5rem;
   }
   #profile,
   .section-container {
+    margin: 5rem;
     display: block;
   }
   #projects,
@@ -33,16 +55,20 @@
     top: 5vh;
     display: block;
   }
-  .arrow {
-    display: none;
+  #contact,
+  .info-uper-container {
+    margin-top: 10rem;
+    display: flex;
   }
+  /* .arrow {
+    display: none;
+  } */
   section,
   .section-container {
     height: fit-content;
   }
   section {
     margin: 0 5%;
-    /* background-color: chartreuse; */
   }
   .section__pic-container {
     width: 275px;
@@ -52,20 +78,33 @@
   .about-containers {
     margin-top: 0;
   }
+  footer {
+    /* background-color: aqua; */
+    height: 10vh;
+    margin: 0%;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
   footer {
-    height: 4ovh;
+    background-color: aqua;
+    height: 30vh;
+    margin: 0%;
   }
+
+  #contact,
+  .info-uper-container {
+    margin-top: 35rem;
+    display: flex;
+  }
+  
   #profile {
     height: 83vh;
     margin-bottom: -10vh;
   }
   #projects {
     height: 83vh;
-    margin-top: 20vh;
+    margin-top: 15vh;
     margin-bottom: 60vh;
   }
   article {
@@ -82,45 +121,132 @@
   .btn-container {
     margin-top: 1rem;
     flex-wrap: wrap;
-}
-
-.contact-info-container {
+  }
+  
+  .contact-info-container {
     margin: 0;
-}
-
-.contact-info-container p,
-.nav-links li a {
+  }
+  
+  .contact-info-container p,
+  .nav-links li a {
     font-size: 1rem;
-}
-
-.experience-sub-tittle {
+  }
+  
+  .experience-sub-tittle {
     font-size: 1.25rem;
   }
-
+  
   .logo {
     font-size: 1.5rem;
   }
-
+  
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
   }
-
+  
   .section__pic-container {
     width: auto;
     height: 46vw;
     justify-content: center;
   }
-
+  
   .section__text__p2 {
     font-size: 2rem;
   }
   .tittle {
     font-size: 2rem;
   }
-
+  
   .text-container {
     text-align: justify;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    margin-top: 15rem;
+    flex-wrap: wrap;
+    width:fit-content;
+    margin: 2rem;
+  }
+  
+  #profile {
+    height: 83vh;
+    margin-bottom: -10vh;
+  }
+  article {
+    font-size: 1rem;
+  }
+  
+  #projects {
+    /* opacity: 38%; */
+    height: 83vh;
+    background-color: yellow;
+    margin-top: 20px;
+    margin-bottom: 60vh;
+  }
+  
+  #contact {
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    margin-top: 70rem;
+    margin-bottom: -8rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .section__text__p2 {
+    font-size: 1.5rem;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .text-container {
+    margin: 1rem;
+    margin-top: -1rem;
+    text-align: justify;
+  }
+  
+  .experience-sub-tittle {
+    font-size: 1.25rem;
+  }
+  
+  .tittle {
+    font-size: 2rem;
+  }
+  
+  footer nav {
+    /* height: fit-content; */
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+    z-index: 1;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    /* gap: 0.5rem; */
+    text-align: center;
+    font-size: 1em;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 0.8rem;
+  }
+  
+  footer p {
+    font-size: 0.7rem;
+    /* margin-bottom: -60rem; */
+    /* align-items: end; */
   }
 }
