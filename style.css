@@ -62,8 +62,8 @@ a:hover {
 
 .logo {
   font-size: 2rem;
-  font-weight: 500;
-  color: #3d535f;
+  font-weight: 600;
+  color: #869daa;
   letter-spacing: 3px;
 }
 
@@ -196,7 +196,6 @@ section {
 }
 
 .section__text {
-  /* background-color: chartreuse; */
   margin-top: 1.5rem;
   margin-bottom: 5px;
   align-self: center;
@@ -262,7 +261,7 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background-color: rgb(53, 53, 53);
+  background-color: rgb(225, 28, 28);
   color: white;
 }
 
@@ -288,7 +287,6 @@ section {
 }
 
 #about {
-  margin: 2rem;
   position: relative;
   z-index: -1;
   bottom: -4rem;
@@ -303,15 +301,16 @@ section {
 /* Aplicando efeitos na section about */
 /* **************************************************** */
 .about-details-container {
+  /* background-color: aqua; */
   justify-content: center;
   flex-direction: column;
-  filter: blur(15px);
+  /* filter: blur(15px); */
   transition: all 2s;
-  transform: translateX(-100%);
+  transform: translateX(0%);
 }
 
 .show {
-  transform: translateX(0);
+  transform: translateX(-50%);
   filter: blur(0px);
   transition: all 2s;
 }
@@ -338,15 +337,8 @@ section {
   z-index: -1;
 }
 
-/* .arrow {
-  background-color: aqua;
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-} */
-
 .details-container {
-  background-color: greenyellow;
+  background-color: rgb(248, 57, 19);
   padding: 1.5rem;
   flex: 1;
   background: white;
@@ -368,6 +360,7 @@ section {
   width: 500px;
   margin: auto 0;
 }
+ 
 
 /* EXPERIENCE SECTION */
 #experience {

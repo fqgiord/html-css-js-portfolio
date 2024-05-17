@@ -1,413 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="extras.css" />
 
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Heavy Machine World</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="./extras.html">Extras</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">FG.</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          <li><a href="#extras" onclick="toggleMenu()">Extras</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <!-- <img
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="extras.css" />
+
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Fernando Giordano</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <!-- <img
           src="./assets/hm-2.jpg"
           alt="Fernando Giordano"
           class="pic"
         /> -->
+    </div>
+    <div class="section__text">
+      <h1 class="tittle">What can I Do?</h1>
+      <ul class="section_profile">
+        <li>
+          <p class="section__text__p1">Operate backhoe</p>
+        </li>
+        <li>
+          <p class="section__text__p1">...Be a Site Engineer</p>
+        </li>
+        <li>
+          <p class="section__text__p1">...Cad designer (P&ID)</p>
+        </li>
+        <li>
+          <p class="section__text__p1">And present these skills as a frontend developer!</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="about">
+    <div class="tittle-about">
+      <p>Get To Know More</p>
+      <h1>About Me</h1>
+    </div>
+    <div class="section-container">
+      <img src="./assets/hm-1.jpg" alt="">
+      <div class="section__tex-container">
+        <h1>With Some Experience In The Construction Industry</h1>
+        <br>
+        <p>I excelled in several important roles. As an <strong style="color: rgb(246, 8, 8);">Excavator
+            Operator</strong> , I worked with demolition and earthmoving, ensuring efficiency and safety. </p>
+        <br>
+        <p>
+          In my role as a <strong style="color: rgb(223, 5, 5);">Site Engineer</strong>, I supervised on-site
+          projects, coordinated teams, and ensured strict compliance with safety, quality, and deadline standards.
+          Additionally, I managed the dismantling and safe removal of industrial chemical process installations,
+          including heat exchangers, pumps, compressors, towers, and piping systems.
+        </p>
+        <br>
+        <p>
+          Additionally, as a <strong style="color: rgb(228, 8, 8);">CAD Designer (P&ID)</strong>, I created and
+          interpreted detailed piping and instrumentation diagrams, ensuring clear communication and precise project
+          execution. </p>
+        <br>
+        <p>This blend of technical skills and hands-on experience makes me a well-rounded professional, fully prepared
+          to tackle the challenges of modern construction with innovation and excellence.
+        </p>
+
       </div>
-      <div class="section__text">
-        <h1 class="tittle">Fernando Gx.</h1>
-        <p class="section__text__p1">O cachorro pode até ser o melhor amigo do homem (em casa), porque na construção civil, com certeza são as maquinas!"</p>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/fernando-g-tech/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/fqgiord/'"
-          />
-        </div>
+      <div class="section__vid-container">
+        <video src="./assets/heavyMachine.mp4" controls width="400px" muted poster="./assets/hm-3.jpg"></video>
       </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="tittle">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-picfqg4.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>1+ years <br />FullStack Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>
-                Engineer Bachelors Degree - BR<br />FullStack Web Development -
-                PT
-              </p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Solidifying my transition to the tech sector in Portugal, I've
-              enhanced my skills in web development and teamwork. Determined to
-              drive technological innovation, I'm focused on professional growth
-              and effective collaboration, ready to make an immediate
-              contribution in Porto.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      /> -->
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="tittle">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-tittle">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Bootstrap</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-tittle">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Flask</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MySQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      /> -->
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="tittle">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/todo_list.png"
-                alt="Project One"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-tittle project-tittle">
-              ToDo List - React
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/fqgiord/ToDo_List'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/comming soon.png"
-                alt="Project Two"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-tittle project-tittle">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/comming soon.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-tittle project-tittle">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      /> -->
-    </section>
-    <section id="contact">
-      <p class="section__text_p1">Get in Touch</p>
-      <h1 class="tittle">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:fqgiord@hotmail.com">fqgiord@hotmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
+    </div>
+  </section>
+
+  <footer>
+    <div>
       <p>Copyright &#169; 2024 Fernando Giordano. All Rights Reserved</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
