@@ -4,6 +4,11 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
+## 🌐 Demo ao Vivo
+
+🔗 **[Ver Projeto Online](https://fqgiord.github.io/html-css-js-portfolio/)**
+
+
 ## 📋 Sobre o Projeto
 
 Portfólio pessoal moderno e responsivo desenvolvido com HTML, CSS e JavaScript. O projeto apresenta um design elegante e profissional, com animações suaves e layout adaptável para diferentes dispositivos.
